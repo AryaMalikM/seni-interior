@@ -181,13 +181,138 @@
 .hero-content button {
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #4f7942   ;
+    background-color: hwb(106 26% 53%)   ;
     color: white;
     border: none;
     cursor: pointer;
     font-weight: bold;
     font-size: 1rem;
 }
+
+/* KONTEN WEB */
+
+.section-furniture {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px;
+    margin: 3rem 10rem;
+}
+
+.furniture-left {
+    flex: 1;
+}
+
+.furniture-left h3 {
+    font-size: 3rem;
+    border-left: 3px solid hwb(106 26% 53%);
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+.furniture-left p {
+    font-size: 1.4rem;
+    max-width: 400px;
+}
+
+.furniture-middle {
+    line-height: 1.6;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.furniture-middle p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.furniture-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.furniture-right img {
+    width: 100%;
+    max-width: 250px;
+    min-width: 100px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.furniture-right img:hover {
+    transform: scale(1.05);
+}
+
+/* KONTEN KEUNGGULAN */
+
+.why-choose {
+    margin-top: 9.2rem;
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-text h4 {
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.why-text h2 {
+    font-size: 40px;
+    margin: 10px 0 40px 0;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 4rem;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 kolom */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.why-item {
+    border: 4px solid #4f7842;
+    padding: 40px 20px;
+    background: #fff;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.why-item img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.why-item h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.why-item p {
+    font-size: 18px;
+    color: #555;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 
 
 
@@ -215,7 +340,43 @@
 .hero-section {
     height: 750px;
 }
+
+/*KONTEN WEB */
+
+.furniture-left h3 {
+    font-size: 2rem;
 }
+
+.furniture-middle p {
+    font-size: 1rem;
+}
+
+.furniture-left p {
+    font-size: 1.1rem;
+}
+
+ .furniture-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+.section-furniture {
+    margin: 3rem 5rem;
+}
+
+/* KONTEN KEUNGGULAN */ 
+
+.why-item {
+    padding: 20px 5px;
+}
+
+.why-item p {
+    font-size: 15px;
+}
+
+
+}
+
+
 
 @media only screen  and (max-width: 1025px) {
     /*NAVIGATION BAR*/
@@ -241,6 +402,31 @@
         font-size: 1rem;
         max-width: 400px;
     }
+
+    /* KONTEN WEB */ 
+
+    .furniture-left h3 {
+        font-size: 1.5rem;
+    }
+
+    .furniture-left p {
+        font-size: .9rem ;
+    }
+
+    .furniture-middle p {
+        font-size: .9rem;
+    }
+
+    .furniture-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-furniture {
+    margin: 3rem 1rem;
+}
+
+
+
 }
 
 
@@ -318,6 +504,34 @@
         max-width: 400px;
     }
 
+    /* KONTEN WEB */ 
+
+ .section-furniture {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+
+    .furniture-middle p {
+        margin-bottom:.5rem;
+    }
+
+
+   .furniture-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* KONTEN KEUNGGULAN */
+
+    .why-text h4 {
+        font-size: 1rem;
+    }
+
+    .why-text h2 {
+        font-size: 2rem;
+    }
 }
 
 
