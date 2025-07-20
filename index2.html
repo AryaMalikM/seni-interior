@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Interior Profesional</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    /* Header Section */
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .main-title {
+      font-size: 2.5rem;
+      color: #2d3436;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .sub-title {
+      font-size: 1.2rem;
+      color: #636e72;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    
+    .description {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    
+    /* Stats Section */
+    .stats-section {
+      background: linear-gradient(135deg, #6c5ce7, #00cec9);
+      color: white;
+      padding: 40px 20px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(108, 92, 231, 0.3);
+    }
+    
+    .stats-title {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+    
+    .stat-item {
+      padding: 20px;
+    }
+    
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .stat-label {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    /* Feature Section */
+    .feature-section {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    
+    .feature-title {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2d3436;
+    }
+    
+    .feature-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .main-title {
+        font-size: 2rem;
+      }
+      
+      .sub-title {
+        font-size: 1rem;
+      }
+      
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .stat-number {
+        font-size: 2rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .main-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1 class="main-title">Ayo Buat Interior Rumah Anda Unik dan Berbeda</h1>
+      <p class="sub-title">Apakah Anda sudah memiliki desain untuk membuat furnitur tertentu? Atau mungkin Anda membutuhkan perubahan total dari konsep yang ada?</p>
+    </div>
+    
+    <!-- Description Section -->
+    <div class="description">
+      <p>Segera hubungi kami, dan kami akan dengan senang hati membantu Anda mewujudkan interior impian Anda.</p>
+    </div>
+    
+    <!-- Stats Section -->
+    <div class="stats-section">
+      <h2 class="stats-title">Kami Sudah Terbukti</h2>
+      
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="10" data-duration="1500">0</div>
+          <div class="stat-label">Tahun Pengalaman</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-number" data-target="972" data-duration="2000">0</div>
+          <div class="stat-label">Proyek Diselesaikan</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-number" data-target="95" data-duration="1800">0</div>
+          <div class="stat-label">Klien Puas</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-number" data-target="90" data-duration="1600">0</div>
+          <div class="stat-label">Hari Garansi</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Feature Section -->
+    <div class="feature-section">
+      <h2 class="feature-title">Kami Paham Kebutuhan Anda</h2>
+      <p class="feature-content">Membeli furnitur untuk rumah bukan hanya tentang harga, tapi juga tentang kualitas, ketahanan, dan kecocokan dengan gaya hidup Anda. Kami hadir untuk memberikan solusi terbaik untuk kebutuhan furnitur dan interior Anda.</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const statNumbers = document.querySelectorAll('.stat-number');
+      
+      const animateCounter = (element, target, duration) => {
+        const start = 0;
+        const startTime = performance.now();
+        const isPercentage = element.parentElement.querySelector('.stat-label').textContent.includes('%');
+        
+        const updateCounter = (currentTime) => {
+          const elapsedTime = currentTime - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+          const currentValue = Math.floor(progress * target);
+          
+          element.textContent = isPercentage ? currentValue + '%' : currentValue;
+          
+          if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+          } else {
+            // Tambahkan tanda '+' jika bukan persentase
+            if (!isPercentage && target >= 1000) {
+              element.textContent = (target / 1000).toFixed(1) + 'K+';
+            } else if (!isPercentage) {
+              element.textContent = target + '+';
+            }
+          }
+        };
+        
+        requestAnimationFrame(updateCounter);
+      };
+      
+      const startCounters = () => {
+        statNumbers.forEach(stat => {
+          const target = parseInt(stat.getAttribute('data-target'));
+          const duration = parseInt(stat.getAttribute('data-duration'));
+          animateCounter(stat, target, duration);
+        });
+      };
+      
+      // Jalankan animasi saat elemen masuk viewport
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            startCounters();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      
+      observer.observe(document.querySelector('.stats-section'));
+    });
+  </script>
+</body>
+</html>
