@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Seni Interior Jepara</title>
   <link rel="stylesheet" href="Layanan_style.css">
+  <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="../tempstyle.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -104,75 +105,117 @@
 
 
 
-  <div class="product-card-main">
-    <div class="produk-grid-container">
-      <!-- Baris 1 -->
-      <div class="produk-row-three">
-        <div class="produk-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-          <img src="image/furniture dapur.jpeg" alt="Kitchen Set">
-          <div class="produk-overlay"></div>
-          <div class="produk-card-text">
-            <h3>Kitchen Set</h3>
-            <p>Kami menyediakan layanan desain dan pembuatan kitchen set custom yang fungsional dan estetis, disesuaikan dengan kebutuhan dan gaya ruang Anda.</p>
-          </div>
-        </div>
-        <div class="produk-card" data-aos="fade-up" data-aos-duration="1200">
-          <img src="image/product/ruang tamu.jpg" alt="Bedroom Set">
-          <div class="produk-overlay"></div>
-          <div class="produk-card-text">
-            <h3>Ruang Tamu</h3>
-            <p>Kami menawarkan desain ruang tamu yang nyaman dan elegan, dengan furnitur custom yang menyesuaikan gaya dan kebutuhan Anda. Ciptakan kesan hangat dan berkelas untuk menyambut setiap tamu.</p>
-          </div>
-        </div>
-        <div class="produk-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-          <img src="image/product/Ruang keluarga.jpg" alt="Living Room Set">
-          <div class="produk-overlay"></div>
-          <div class="produk-card-text">
-            <h3>Ruang Keluarga</h3>
-            <p>Kami menghadirkan desain ruang keluarga yang nyaman dan fungsional, ideal untuk berkumpul dan bersantai bersama keluarga tercinta dengan suasana hangat dan harmonis.</p>
-          </div>
-        </div>
-      </div>
+    <div class="product-card-main">
+        <div class="produk-grid-container">
+            <!-- Baris 1 -->
+            <div class="produk-row-three">
+                <div class="produk-card" onclick="openSlider('Kitchen Set', [
+                    'image/furniture dapur.jpeg',
+                    
+                ])">
+                    <img src="image/furniture dapur.jpeg" alt="Kitchen Set">
+                    <div class="produk-overlay"></div>
+                    <div class="produk-card-text">
+                        <h3>Kitchen Set</h3>
+                        <p>Desain kitchen set custom yang fungsional.</p>
+                    </div>
+                </div>
 
-      <!-- Baris 2 -->
-      <div class="produk-row-three">
-        <div class="produk-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-          <img src="image/product/ruang makan.jpg" alt="Lemari Pakaian">
-          <div class="produk-overlay"></div>
-          <div class="produk-card-text">
-            <h3>Ruang Makan</h3>
-            <p>Kami menyediakan desain ruang makan yang elegan dan nyaman, menciptakan suasana hangat untuk momen berkumpul dan menikmati hidangan bersama keluarga.</p>
-          </div>
-        </div>
-        <div class="produk-card" data-aos="fade-up" data-aos-duration="1200">
-          <img src="image/product/Bedroom.jpg" alt="Lemari Bawah Tangga">
-          <div class="produk-overlay"></div>
-          <div class="produk-card-text">
-            <h3>Kamar Tidur</h3>
-            <p>Kami merancang kamar tidur yang nyaman dan personal, dengan furnitur custom yang mendukung kenyamanan, fungsi, dan estetika untuk istirahat yang maksimal.</p>
-          </div>
-        </div>
-        <div class="produk-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-          <img src="image/product/Apartemen.jpg" alt="Interior Kantor">
-          <div class="produk-overlay"></div>
-          <div class="produk-card-text">
-            <h3>⁠Apartemen </h3>
-            <p>Kami menawarkan desain interior apartemen yang modern dan efisien, memaksimalkan setiap sudut ruang agar nyaman, fungsional, dan tetap stylish sesuai kebutuhan Anda.</p>
-          </div>
-        </div>
-      </div>
+                <div class="produk-card" onclick="openSlider('Ruang Tamu', [
+                    'image/product/ruang tamu.jpg',
 
-      <!-- Baris 3 -->
-      <div class="produk-row-one">
-        <div class="produk-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-          <img src="image/product/interior kantor.jpg" alt="Interior Apartemen">
-          <div class="produk-overlay"></div>
-          <div class="produk-card-text">
-            <h3>Perkantoran</h3>
-            <p>Kami menyediakan desain interior kantor yang profesional dan nyaman, mendukung produktivitas dengan tata ruang yang efisien dan estetis sesuai budaya kerja Anda.</p>
-          </div>
+                ])">
+                    <img src="image/product/ruang tamu.jpg" alt="Living Room">
+                    <div class="produk-overlay"></div>
+                    <div class="produk-card-text">
+                        <h3>Ruang Tamu</h3>
+                        <p>Desain ruang tamu yang nyaman dan elegan.</p>
+                    </div>
+                </div>
+
+                <div class="produk-card" onclick="openSlider('Ruang Keluarga', [
+                    'image/product/Ruang keluarga.jpg',
+                 
+                ])">
+                    <img src="image/product/Ruang keluarga.jpg" alt="Family Room">
+                    <div class="produk-overlay"></div>
+                    <div class="produk-card-text">
+                        <h3>Ruang Keluarga</h3>
+                        <p>Ruang keluarga nyaman untuk berkumpul.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Baris 2 -->
+            <div class="produk-row-three">
+                <div class="produk-card" onclick="openSlider('Ruang Makan', [
+                    'image/product/ruang makan.jpg',
+                    'image/product/64B2BB04-A4C9-408E-A4EA-04A62CB17E13.jpg',
+                    'image/product/tamiko cafe.jpg',
+
+                ])">
+                    <img src="image/product/ruang makan.jpg" alt="Dining Room">
+                    <div class="produk-overlay"></div>
+                    <div class="produk-card-text">
+                        <h3>Ruang Makan</h3>
+                        <p>Desain ruang makan elegan dan nyaman.</p>
+                    </div>
+                </div>
+
+                <div class="produk-card" onclick="openSlider('Kamar Tidur', [
+                  'image/product/Bedroom.jpg',
+                  'image/product/lemari modren2.jpg',
+                  'image/product/lemari modern.jpg',
+
+                ])">
+                    <img src="image/product/Bedroom.jpg" alt="Bedroom">
+                    <div class="produk-overlay"></div>
+                    <div class="produk-card-text">
+                        <h3>Kamar Tidur</h3>
+                        <p>Kamar tidur nyaman dengan desain personal.</p>
+                    </div>
+                </div>
+
+                <div class="produk-card" onclick="openSlider('Apartemen', [
+                    'image/product/Apartemen.jpg',
+                   
+                ])">
+                    <img src="image/product/Apartemen.jpg" alt="Apartment">
+                    <div class="produk-overlay"></div>
+                    <div class="produk-card-text">
+                        <h3>Apartemen</h3>
+                        <p>Desain apartemen modern dan efisien.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Baris 3 -->
+            <div class="produk-row-one">
+                <div class="produk-card" onclick="openSlider('Perkantoran', [
+                    'image/product/interior kantor.jpg',
+                    'image/product/product-kantor.jpg',
+                    'image/product/kitchen office setup.jpg',
+                ])">
+                    <img src="image/product/interior kantor.jpg" alt="Office">
+                    <div class="produk-overlay"></div>
+                    <div class="produk-card-text">
+                        <h3>Perkantoran</h3>
+                        <p>Desain interior kantor profesional.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+
+    <!-- Slider Modal -->
+    <div id="sliderModal" class="slider-modal">
+        <span class="close-slider" onclick="closeSlider()">&times;</span>
+        <div class="slider-content">
+            <div class="slider-nav prev-slide" onclick="changeSlide(-1)">&#10094;</div>
+            <div class="slider-images-container" id="sliderImages"></div>
+            <div class="slider-nav next-slide" onclick="changeSlide(1)">&#10095;</div>
+        </div>
+    </div>
 
    <script src="script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -181,6 +224,7 @@
       once: true,
     });
   </script>
+  <script src="slider.js"></script>
 </body>
 
 <footer>
@@ -227,6 +271,12 @@
         <img src="image/product/de29fae4-1eaf-4034-a815-e0d59c1b3b9e.jpg" alt="footer-gallery6">
       </div>
     </div>
+
+      <!-- Bottom Copyright -->
+  <div class="footer-bottom">
+    Copyright © 2025 Seni Interior Jepara
   </div>
+  </div>
+  
   </footer>
 </html>

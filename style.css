@@ -677,6 +677,7 @@
         padding: 60px 30px 20px 30px;
         width: 100%;
         overflow-x : hidden;
+        margin-top: 4rem;
     }
 
     .footer-container {
@@ -1282,5 +1283,9 @@
 
     .produk-card-text p {
         font-size: 12px;
+    }
+     /* FOOTER */ 
+    footer {
+        padding: 60px 0px 20px 2px;
     }
     }
